@@ -1,0 +1,19 @@
+
+div {
+  border: 1px solid chocolate;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.main-container {
+  display:flex;
+  height:100vh;
+}
+.left-navigation {
+  width:35%;
+}
+.main-image {
+  width:65%;
+}
