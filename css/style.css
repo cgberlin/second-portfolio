@@ -15,10 +15,10 @@ div {
   width:35%;
   background-color: white;
   display:flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow:column;
-  border:3px solid black;
+  border:
 }
 .main-image {
   width:65%;
@@ -43,4 +43,11 @@ div {
 }
 .transparent-title h1 {
   font-size:4.5rem;
+}
+
+.circle {
+  border-radius:50%;
+  border:3px solid #545454;
+  height:10rem;
+  width:10rem;
 }
