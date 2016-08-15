@@ -1,6 +1,6 @@
 
 div {
-  border: 1px solid chocolate;
+
 }
 
 
@@ -13,7 +13,34 @@ div {
 }
 .left-navigation {
   width:35%;
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:column;
+  border:3px solid black;
 }
 .main-image {
   width:65%;
+  background: url(../images/laptop-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.transparent-title {
+  height:20%;
+  width:80%;
+  background-color: #545454;
+  border: 3px solid black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  color:white;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 3px 3px black;
+}
+.transparent-title h1 {
+  font-size:4.5rem;
 }
