@@ -26,6 +26,10 @@ div {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-around;
 }
 .transparent-title {
   height:20%;
@@ -86,4 +90,31 @@ div {
 .circle-image {
   width:80%;
   height:80%;
+}
+.project-image-container {
+  width:30%;
+  height:30%;
+  border:3px solid white;
+  display:none;
+}
+
+#about-me-project {
+  background: url(../images/about-me-screenshot.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#karma-landing-project {
+  background: url(../images/karma-screenshot.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#location-map {
+  width:60%;
+  height:30%;
+  border:3px solid black;
 }
