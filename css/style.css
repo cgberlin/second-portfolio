@@ -48,7 +48,7 @@ div {
   text-align: center;
   color:white;
   font-family: 'Oswald', sans-serif;
-  text-shadow: 3px 3px black;
+  text-shadow: 3px 3px #388E8E;
   box-shadow:3px 3px 3px #545454;
 
 }
@@ -70,10 +70,12 @@ div {
   display:flex;
   justify-content:center;
   align-items:center;
+  transition:all 0.3s ease;
 }
 
 .circle:hover {
   cursor:pointer;
+  box-shadow: 0 0 4px 4px #388E8E;
 }
 .left-navigation div h2 {
   font-size: 2.5rem;
@@ -97,7 +99,9 @@ div {
 .circle-image {
   width:80%;
   height:80%;
+
 }
+
 .project-image-container {
   width:30%;
   height:30%;
@@ -105,21 +109,6 @@ div {
   display:none;
 }
 
-#about-me-project {
-  background: url(../images/about-me-screenshot.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#karma-landing-project {
-  background: url(../images/karma-screenshot.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 #location-map {
   width:60%;
   height:40%;
@@ -134,4 +123,27 @@ div {
 }
 #location-header {
   background-color: white;
+}
+.project-image {
+  width:auto;
+  height:auto;
+  max-width:100%;
+}
+.project-image-container {
+  width:30%;
+  height:30%;
+  border:3px solid white;
+  display:none;
+  transition:all .2s ease;
+  display:none;
+
+}
+.project-image-container:hover {
+  cursor:pointer;
+  box-shadow: 0 0 4px 4px #388E8E;
+}
+
+.chrome-image {
+  height:10%;
+  width:10%;
 }
