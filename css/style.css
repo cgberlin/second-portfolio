@@ -3,6 +3,11 @@ div {
 
 }
 
+
+#location-header, #location-map{
+  display:none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -40,10 +45,12 @@ div {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  text-align: center;
   color:white;
   font-family: 'Oswald', sans-serif;
   text-shadow: 3px 3px black;
   box-shadow:3px 3px 3px #545454;
+
 }
 .transparent-title h1 {
   font-size:4.5rem;
@@ -115,6 +122,16 @@ div {
 }
 #location-map {
   width:60%;
-  height:30%;
+  height:40%;
   border:3px solid black;
+}
+.transparent-title h3 {
+  font-size:3.5rem;
+  text-shadow: none;
+  color:black;
+  font-family: 'Taviraj', serif;
+
+}
+#location-header {
+  background-color: white;
 }
