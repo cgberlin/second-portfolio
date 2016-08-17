@@ -135,15 +135,55 @@ div {
   border:3px solid white;
   display:none;
   transition:all .2s ease;
-  display:none;
 
 }
 .project-image-container:hover {
-  cursor:pointer;
   box-shadow: 0 0 4px 4px #388E8E;
 }
 
 .chrome-image {
-  height:10%;
-  width:10%;
+  height:28%;
+  width:6rem;
+  margin-left: 5rem;
+  z-index: 2;
+  position: absolute;
+  display:none;
+}
+.git-image {
+  height:28%;
+  width:6rem;
+  margin-left: 14rem;
+  z-index: 2;
+  position: absolute;
+  display:none;
+}
+.chrome-image:hover, .git-image:hover{
+  cursor:pointer;
+}
+
+#contact-me {
+  display:none;
+  justify-content: space-between;
+  align-items: center;
+  height:60%;
+  box-shadow: none;
+  background-color: LightGray;
+  color:black;
+  text-shadow: 1px 1px DarkGray;
+  font-family: 'Taviraj', serif;
+}
+
+
+.contact-buttons-container {
+  display:flex;
+  width:100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-buttons {
+  width:15%;
+
+}
+.contact-buttons:hover{
+  cursor:pointer;
 }
