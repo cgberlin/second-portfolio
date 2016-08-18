@@ -8,6 +8,7 @@ $('#where-i-am').on('click', function(){
 $('#projects').on('click', function(){
   hideEverything();
   $('.project-image-container').css('display', 'flex');
+  $('.more-projects-button').show();
 });
 
 $('#contact').on('click', function(){
@@ -21,35 +22,52 @@ $('#about-me').on('click', function(){
   $('#about-me-page').css('display', 'flex');
   $('#about-me-page-header').show();
 });
-
+$('.more-projects-button').on('click', function(){
+  $('.project-image-container').hide();
+  $('.more-projects-button').hide();
+  $('.project-image-container-2').css('display', 'flex');
+});
 
 
 $('.project-image-container').hover(function(){
   $(this).children(':first').css('-webkit-filter', 'grayscale(1)');
-  $(this).children().show(400);
+  $(this).children().show(200);
 },
 function(){
   $(this).children().css('-webkit-filter', 'grayscale(0)');
-  $(this).children(':not(:first-child)').hide(400);
+  $(this).children(':not(:first-child)').hide(200);
+}
+);
+$('.project-image-container-2').hover(function(){
+  $(this).children(':first').css('-webkit-filter', 'grayscale(1)');
+  $(this).children().show(200);
+},
+function(){
+  $(this).children().css('-webkit-filter', 'grayscale(0)');
+  $(this).children(':not(:first-child)').hide(200);
 }
 );
 
+
 $('.contact-buttons').hover(function(){
-  $(this).animate({width:'18%'}, 300);
+  $(this).css('-webkit-filter', 'invert(.8)');
 },
 function(){
-  $(this).animate({width:'15%'}, 300);
+  $(this).css('-webkit-filter', 'invert(.2)');
 }
 );
+
 
 
 
 function hideEverything(){
   $('.project-image-container').css('display', 'none');
+  $('.project-image-container-2').css('display', 'none');
   $('#location-map').hide();
   $('#location-header').css('display', 'none');
   $('#contact-me').hide();
   $('#contact-me-bottom').hide();
   $('#about-me-page').hide();
   $('#about-me-page-header').hide();
+  $('.more-projects-button').hide();
 }

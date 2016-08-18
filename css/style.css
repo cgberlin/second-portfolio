@@ -4,7 +4,8 @@ div {
 }
 
 
-#location-header, #location-map{
+
+#location-header, #location-map, .more-projects-button{
   display:none;
 }
 
@@ -22,11 +23,11 @@ div {
   justify-content: space-around;
   align-items: center;
   flex-flow:column;
-  border:
 }
 .main-image {
   width:65%;
   background: url(../images/laptop-bg.jpg) no-repeat center center fixed;
+  background-attachment: fixed
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -55,11 +56,13 @@ div {
 #main-title {
   font-size:4.5rem;
 }
-.transparent-title h2 {
+.transparent-title h2, .more-projects-button {
   font-size:2rem;
   font-family: 'Taviraj', serif;
   text-shadow:none;
+  transition:all 0.3s ease;
 }
+
 
 .circle {
   border-radius:50%;
@@ -73,7 +76,7 @@ div {
   transition:all 0.3s ease;
 }
 
-.circle:hover {
+.circle:hover, .more-projects-button:hover {
   cursor:pointer;
   box-shadow: 0 0 4px 4px #388E8E;
 }
@@ -99,10 +102,9 @@ div {
 .circle-image {
   width:80%;
   height:80%;
-
 }
 
-.project-image-container {
+.project-image-container, .project-image-container-2 {
   width:30%;
   height:30%;
   border:3px solid white;
@@ -135,7 +137,7 @@ div {
   transition:all .2s ease;
 
 }
-.project-image-container:hover {
+.project-image-container:hover, .project-image-container-2:hover {
   box-shadow: 0 0 4px 4px #388E8E;
 }
 
@@ -180,7 +182,8 @@ div {
   align-items: center;
 }
 .contact-buttons {
-  width:15%;
+  width:45%;
+  -webkit-filter: invert(.2);
 }
 .contact-buttons:hover{
   cursor:pointer;
@@ -204,4 +207,11 @@ div {
   text-shadow: none;
   font-size:2rem;
   font-family: 'Taviraj', serif;
+}
+
+.contact-link {
+  display:flex;
+  width:25%;
+  justify-content: center;
+  align-items: center;
 }
