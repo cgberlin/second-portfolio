@@ -52,7 +52,7 @@ div {
   box-shadow:3px 3px 3px #545454;
 
 }
-.transparent-title h1 {
+#main-title {
   font-size:4.5rem;
 }
 .transparent-title h2 {
@@ -114,15 +114,13 @@ div {
   height:40%;
   border:3px solid black;
 }
-.transparent-title h3 {
+
+#location-header, #contact-me-bottom {
+  background-color: white;
   font-size:3.5rem;
   text-shadow: none;
   color:black;
   font-family: 'Taviraj', serif;
-
-}
-#location-header {
-  background-color: white;
 }
 .project-image {
   width:auto;
@@ -163,17 +161,18 @@ div {
 
 #contact-me {
   display:none;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height:60%;
-  box-shadow: none;
-  background-color: LightGray;
+  height:40%;
+  background-color: white;
   color:black;
   text-shadow: 1px 1px DarkGray;
   font-family: 'Taviraj', serif;
 }
 
-
+#contact-me-bottom {
+  display:none;
+}
 .contact-buttons-container {
   display:flex;
   width:100%;
@@ -182,8 +181,27 @@ div {
 }
 .contact-buttons {
   width:15%;
-
 }
 .contact-buttons:hover{
   cursor:pointer;
+}
+#about-me-page-header {
+  height:10%;
+  background-color: white;
+  color: black;
+  text-shadow: 1px 1px DarkGray;
+  font-family: 'Taviraj', serif;
+  display:none;
+}
+
+#about-me-page {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color:black;
+  height:60%;
+  text-shadow: none;
+  font-size:2rem;
+  font-family: 'Taviraj', serif;
 }
