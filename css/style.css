@@ -221,7 +221,7 @@ div {
     }
     .left-navigation {
       width:100%;
-      height:30%;
+      height:40%;
     }
     .main-image{
       background: url(../images/laptop-bg.jpg) no-repeat center center;
@@ -257,5 +257,24 @@ div {
     .git-image {
       margin-left:14%;
     }
+}
+
+@media only screen and (max-width: 550px) {
+    .circle{
+      width:6rem;
+      height: 6rem;
+    }
+    #circles-for-nav h2 {
+      font-size: 1.8rem;
+    }
+    #circles-for-nav div {
+      padding:.3rem;
+    }
+    #about-me-main-par {
+      font-size: 1rem;
+      height:80%;
+}
+@media only screen and (max-width: 900px) {
+    
 
 }
