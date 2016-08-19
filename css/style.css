@@ -32,7 +32,7 @@ div {
   -o-background-size: cover;
   background-size: cover;
   display:flex;
-  flex-wrap:wrap;
+  flex-flow: column;
   align-items:center;
   justify-content:space-around;
 }
@@ -103,11 +103,11 @@ div {
   height:80%;
 }
 
-.project-image-container, .project-image-container-2 {
-  width:30%;
-  height:30%;
+.project-image-container {
+  
   border:3px solid white;
   display:none;
+  transition:all .2s ease;
 }
 
 #location-map {
@@ -128,14 +128,7 @@ div {
   height:auto;
   max-width:100%;
 }
-.project-image-container {
-  width:30%;
-  height:30%;
-  border:3px solid white;
-  display:none;
-  transition:all .2s ease;
 
-}
 .project-image-container:hover, .project-image-container-2:hover {
   box-shadow: 0 0 4px 4px #388E8E;
 }
@@ -275,6 +268,6 @@ div {
       height:80%;
 }
 @media only screen and (max-width: 900px) {
-    
+
 
 }

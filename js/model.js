@@ -1,4 +1,5 @@
 var map;
+var projectCount = 1;
 
 function initMap() {
   var marinaLat = {lat: 33.9803, lng: -118.4517};

@@ -7,7 +7,7 @@ $('#where-i-am').on('click', function(){
 
 $('#projects').on('click', function(){
   hideEverything();
-  $('.project-image-container').css('display', 'flex');
+  $('#project-1').css('display', 'flex');
   $('.more-projects-button').show();
 });
 
@@ -22,11 +22,8 @@ $('#about-me').on('click', function(){
   $('#about-me-page').css('display', 'flex');
   $('#about-me-page-header').show();
 });
-$('.more-projects-button').on('click', function(){
-  $('.project-image-container').hide();
-  $('.more-projects-button').hide();
-  $('.project-image-container-2').css('display', 'flex');
-});
+
+
 
 
 $('.project-image-container').hover(function(){
@@ -57,7 +54,43 @@ function(){
 }
 );
 
+$('#next-button').on('click', function(){
+  showNextOrPrevious('addToCount');
+});
+$('#previous-button').on('click', function(){
+  showNextOrPrevious('subtractFromCount');
+});
 
+function showNextOrPrevious(addOrSubtract){
+  var projectToChange = '#project-' + projectCount;
+  console.log(projectCount);
+
+  if (projectCount > 11){
+    projectCount = 1;
+  }
+  else if (addOrSubtract === 'addToCount'){
+    addToCount();
+  }
+  else if (addOrSubtract === 'subtractFromCount'){
+    subtractFromCount();
+  }
+  else{
+    console.log('error in arguments for show next or previous');
+  }
+  $(projectToChange).hide();
+  projectToChange = '#project-' + projectCount;
+  $(projectToChange).show();
+}
+function addToCount(){
+  projectCount++;
+  return projectCount;
+}
+function subtractFromCount(){
+  if (projectCount >= 2){
+    projectCount--;
+  }
+  return projectCount;
+}
 
 
 function hideEverything(){
