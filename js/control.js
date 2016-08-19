@@ -22,10 +22,6 @@ $('#about-me').on('click', function(){
   $('#about-me-page').css('display', 'flex');
   $('#about-me-page-header').show();
 });
-
-
-
-
 $('.project-image-container').hover(function(){
   $(this).children(':first').css('-webkit-filter', 'grayscale(1)');
   $(this).children().show(200);
@@ -44,8 +40,6 @@ function(){
   $(this).children(':not(:first-child)').hide(200);
 }
 );
-
-
 $('.contact-buttons').hover(function(){
   $(this).css('-webkit-filter', 'invert(.8)');
 },
@@ -53,18 +47,14 @@ function(){
   $(this).css('-webkit-filter', 'invert(.2)');
 }
 );
-
 $('#next-button').on('click', function(){
   showNextOrPrevious('addToCount');
 });
 $('#previous-button').on('click', function(){
   showNextOrPrevious('subtractFromCount');
 });
-
 function showNextOrPrevious(addOrSubtract){
   var projectToChange = '#project-' + projectCount;
-  console.log(projectCount);
-
   if (projectCount > 11){
     projectCount = 1;
   }
@@ -91,8 +81,6 @@ function subtractFromCount(){
   }
   return projectCount;
 }
-
-
 function hideEverything(){
   $('.project-image-container').css('display', 'none');
   $('.project-image-container-2').css('display', 'none');
