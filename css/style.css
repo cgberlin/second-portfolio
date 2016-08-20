@@ -110,6 +110,8 @@ div {
   border:3px solid white;
   display:none;
   transition:all .2s ease;
+  align-items: center;
+  justify-content: center;
 }
 
 #location-map {
@@ -138,18 +140,19 @@ div {
 .chrome-image {
   height:28%;
   width:6rem;
-  margin-left:4%;
+  margin-left:-3.9rem;
   z-index: 2;
   position: absolute;
-  display:none;
+  display: none;
+
 }
 .git-image {
   height:28%;
   width:6rem;
-  margin-left:10%;
+  margin-left:3.9rem;
   z-index: 2;
   position: absolute;
-  display:none;
+  display: none;
 }
 .chrome-image:hover, .git-image:hover{
   cursor:pointer;
@@ -246,13 +249,7 @@ div {
     #contact-me  h1, #contact-me-bottom h1 {
       font-size: 2.5rem;
     }
-    .git-image, .chrome-image {
-      width:4rem;
-      height:20%;
-    }
-    .git-image {
-      margin-left:14%;
-    }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -269,6 +266,10 @@ div {
     #about-me-main-par {
       font-size: 1rem;
       height:80%;
+    }
+    .contact-buttons{
+      width:60%;
+    }
 }
 @media only screen and (max-width: 900px) {
 
