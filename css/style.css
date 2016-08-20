@@ -273,10 +273,10 @@ div {
       width:60%;
     }
     .chrome-image {
-      margin-left:-12rem;
+      margin-left:-18rem;
     }
     .git-image {
-      margin-left:-7rem;
+      margin-left:-12rem;
     }
 }
 @media only screen and (max-height: 700px) {
@@ -292,7 +292,7 @@ div {
       font-size:2rem;
     }
     #about-me-page {
-      height:90%;
+      height:80%;
       align-items: center;
       justify-content: center;
     }
