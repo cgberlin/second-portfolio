@@ -273,10 +273,10 @@ div {
       width:60%;
     }
     .chrome-image {
-      margin-left:-5rem;
+      margin-left:-12rem;
     }
     .git-image {
-      margin-left:-2rem;
+      margin-left:-7rem;
     }
 }
 @media only screen and (max-height: 700px) {
