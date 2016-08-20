@@ -276,7 +276,7 @@ div {
       margin-left:-20rem;
     }
     .git-image {
-      margin-left:-12rem;
+      margin-left:-11rem;
     }
 }
 @media only screen and (max-height: 700px) {
@@ -290,7 +290,7 @@ div {
     }
     #about-me-header{
       font-size:2rem;
-      margin-top:-2rem
+      margin-top:-1rem
     }
     #about-me-page {
       height:80%;
