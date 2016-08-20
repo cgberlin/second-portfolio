@@ -273,7 +273,7 @@ div {
       width:60%;
     }
     .chrome-image {
-      margin-left:-18rem;
+      margin-left:-20rem;
     }
     .git-image {
       margin-left:-12rem;
@@ -290,10 +290,14 @@ div {
     }
     #about-me-header{
       font-size:2rem;
+      margin-top:-2rem
     }
     #about-me-page {
       height:80%;
       align-items: center;
       justify-content: center;
+    }
+    #about-me-main-par {
+      margin-top:-2rem;
     }
 }
