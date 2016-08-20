@@ -1,27 +1,25 @@
-
-div {
-
-}
-
-
-
 #location-header, #location-map, .more-projects-button{
   display:none;
 }
-
 * {
   box-sizing: border-box;
 }
+.main-container, .left-navigation, .main-image, .transparent-title, .circle, #circles-for-nav, .contact-link, .contact-buttons-container {
+  display: flex;
+}
+.left-navigation, .main-image, .transparent-title, .circle, .project-image-container, #contact-me, .contact-buttons-container, #about-me-page, .contact-link {
+  align-items: center;
+}
+.main-image, .left-navigation, #circles-for-nav, #contact-me, .contact-buttons-container {
+  justify-content: space-around;
+}
+
 .main-container {
-  display:flex;
   height:100vh;
 }
 .left-navigation {
   width:35%;
   background-color: white;
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
   flex-flow:column;
 }
 .main-image {
@@ -31,10 +29,7 @@ div {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display:flex;
   flex-flow: column;
-  align-items:center;
-  justify-content:space-around;
 }
 .transparent-title {
   height:20%;
@@ -42,9 +37,6 @@ div {
   margin: 0 auto;
   background-color: #545454;
   border: 3px solid black;
-  display:flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: column;
   text-align: center;
   color:white;
@@ -56,23 +48,21 @@ div {
 #main-title {
   font-size:4.5rem;
 }
+.transparent-title h2, .more-projects-button, #circles-for-nav h2, #location-header, #contact-me-bottom, #contact-me, #about-me-page-header, #about-me-page {
+  font-family: 'Taviraj', serif;
+}
+
 .transparent-title h2, .more-projects-button {
   font-size:2rem;
-  font-family: 'Taviraj', serif;
   text-shadow:none;
   transition:all 0.3s ease;
 }
 
-
 .circle {
   border-radius:50%;
   border:3px solid black;
-  background-color:;
   height:10rem;
   width:10rem;
-  display:flex;
-  justify-content:center;
-  align-items:center;
   transition:all 0.3s ease;
 }
 
@@ -85,18 +75,12 @@ div {
 }
 
 #circles-for-nav {
-  display:flex;
   flex-wrap:wrap;
-  justify-content:space-around;
   text-align:center;
 }
 
 #circles-for-nav div {
   padding: 1rem;
-}
-#circles-for-nav h2 {
-  color:black;
-  font-family: 'Taviraj', serif;
 }
 
 .circle-image {
@@ -104,14 +88,15 @@ div {
   height:80%;
 }
 
+.project-image-container, .chrome-image, .git-image, #contact-me, #contact-me-bottom, #about-me-page-header, #about-me-page{
+  display: none;
+}
+
 .project-image-container {
   margin-left: 2rem;
   margin-right: 2rem;
   border:3px solid white;
-  display:none;
   transition:all .2s ease;
-  align-items: center;
-  justify-content: center;
 }
 
 #location-map {
@@ -121,19 +106,13 @@ div {
 }
 
 #location-header, #contact-me-bottom {
-  background-color: white;
   font-size:3.5rem;
   text-shadow: none;
-  color:black;
-  font-family: 'Taviraj', serif;
 }
 .project-image {
   width:auto;
   height:auto;
   max-width:100%;
-}
-.more-projects-button{
-  background-color: white;
 }
 .project-image-container:hover, .project-image-container-2:hover {
   box-shadow: 0 0 4px 4px #388E8E;
@@ -145,8 +124,6 @@ div {
   margin-left:-3.9rem;
   z-index: 2;
   position: absolute;
-  display: none;
-
 }
 .git-image {
   height:28%;
@@ -154,31 +131,17 @@ div {
   margin-left:3.9rem;
   z-index: 2;
   position: absolute;
-  display: none;
 }
 .chrome-image:hover, .git-image:hover{
   cursor:pointer;
 }
 
 #contact-me {
-  display:none;
-  justify-content: space-around;
-  align-items: center;
   height:40%;
-  background-color: white;
-  color:black;
   text-shadow: 1px 1px DarkGray;
-  font-family: 'Taviraj', serif;
-}
-
-#contact-me-bottom {
-  display:none;
 }
 .contact-buttons-container {
-  display:flex;
   width:100%;
-  justify-content: space-around;
-  align-items: center;
 }
 .contact-buttons {
   width:45%;
@@ -189,30 +152,22 @@ div {
 }
 #about-me-page-header {
   height:10%;
-  background-color: white;
-  color: black;
   text-shadow: 1px 1px DarkGray;
-  font-family: 'Taviraj', serif;
-  display:none;
 }
-
 #about-me-page {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color:black;
   height:60%;
   text-shadow: none;
   font-size:1.5rem;
-  font-family: 'Taviraj', serif;
 }
-
+#about-me-page, #about-me-page-header, #contact-me, #location-header, #contact-me-bottom , .more-projects-button, #circles-for-nav h2 {
+  background-color: white;
+  color:black;
+}
 .contact-link {
-  display:flex;
   width:25%;
+}
+.contact-link, #about-me-page, .project-image-container, .circle, .transparent-title{
   justify-content: center;
-  align-items: center;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -232,7 +187,6 @@ div {
     }
     .transparent-title {
       height :48%;
-
     }
     .circle {
       width:8rem;
@@ -281,21 +235,21 @@ div {
 }
 @media only screen and (max-height: 700px) {
     #main-title-web {
-      margin-top: -1rem;
+      margin-top: -0.5rem;
     }
     #about-me-page-header{
       height:10%;
-      align-items: center;
-      justify-content: center;
     }
     #about-me-header{
       font-size:2rem;
       margin-top:-1rem
     }
-    #about-me-page {
-      height:80%;
+    #about-me-page-header, #about-me-page{
       align-items: center;
       justify-content: center;
+    }
+    #about-me-page {
+      height:80%;
     }
     #about-me-main-par {
       margin-top:-2rem;

@@ -1,51 +1,48 @@
-$('#where-i-am').on('click', function(){
-  hideEverything();
-  $('#location-header').css('display', 'flex');
-  $('#location-map').show();
+function whatToShow(flexshow1, flexshow2, regularshow){     //the three arguments have to do with which elements to display as flex and which to just normally show
+  $(flexshow1).css('display', 'flex');
+  $(flexshow2).css('display', 'flex');
+  $(regularshow).show();
+}
+$('#where-i-am').on('click', function(){       //listener for location button
+  hideEverything();                             //hides anything else that may be showing
+  whatToShow('#location-header', '', '#location-map');
   initMap();
 });
-
-$('#projects').on('click', function(){
+$('#projects').on('click', function(){     //listener for projects button
   hideEverything();
-  $('#project-1').css('display', 'flex');
-  $('.more-projects-button').show();
+  whatToShow('#project-1', '', '.more-projects-button');
 });
-
-$('#contact').on('click', function(){
+$('#contact').on('click', function(){     //listener for contact button
   hideEverything();
-  $('#contact-me').css('display', 'flex');
-  $('#contact-me-bottom').css('display', 'flex');
+  whatToShow('#contact-me', '#contact-me-bottom', '');
 });
-
-$('#about-me').on('click', function(){
+$('#about-me').on('click', function(){     //listener for about me button
   hideEverything();
-  $('#about-me-page').css('display', 'flex');
-  $('#about-me-page-header').css('display', 'flex');
+  whatToShow('#about-me-page', '#about-me-page-header', '');
 });
-$('.project-image-container').hover(function(){
-  $(this).children(':first').css('-webkit-filter', 'grayscale(1)');
-  $(this).children().show(200);
+$('.project-image-container').hover(function(){     //listens for hover event on project images
+  $(this).children(':first').css('-webkit-filter', 'grayscale(1)');    //changes the images to grayscale
+  $(this).children().show(200);     //shows the git and chrome images
 },
 function(){
   $(this).children().css('-webkit-filter', 'grayscale(0)');
   $(this).children(':not(:first-child)').hide(200);
 }
 );
-
-$('.contact-buttons').hover(function(){
+$('.contact-buttons').hover(function(){     //listener for contact me buttons in the contact section
   $(this).css('-webkit-filter', 'invert(.8)');
 },
 function(){
   $(this).css('-webkit-filter', 'invert(.2)');
 }
 );
-$('#next-button').on('click', function(){
+$('#next-button').on('click', function(){     //listener for next button on projects section
   showNextOrPrevious('addToCount');
 });
-$('#previous-button').on('click', function(){
+$('#previous-button').on('click', function(){   //listener for previous button on projects section
   showNextOrPrevious('subtractFromCount');
 });
-function showNextOrPrevious(addOrSubtract){
+function showNextOrPrevious(addOrSubtract){     //function to determine which project to show next, or to loop from beginning
   var projectToChange = '#project-' + projectCount;
   if (projectCount > 10){
     projectCount = 1;
@@ -63,17 +60,17 @@ function showNextOrPrevious(addOrSubtract){
   projectToChange = '#project-' + projectCount;
   $(projectToChange).css('display', 'flex');
 }
-function addToCount(){
+function addToCount(){    //adds to the project count if next button is clicked
   projectCount++;
   return projectCount;
 }
-function subtractFromCount(){
+function subtractFromCount(){   //goes back one if previous button is clicked
   if (projectCount >= 2){
     projectCount--;
   }
   return projectCount;
 }
-function hideEverything(){
+function hideEverything(){    //function to hide every section
   $('.project-image-container').css('display', 'none');
   $('.project-image-container-2').css('display', 'none');
   $('#location-map').hide();
