@@ -115,7 +115,7 @@ div {
 }
 
 #location-map {
-  width:60%;
+  width:80%;
   height:40%;
   border:3px solid black;
 }
@@ -132,7 +132,9 @@ div {
   height:auto;
   max-width:100%;
 }
-
+.more-projects-button{
+  background-color: white;
+}
 .project-image-container:hover, .project-image-container-2:hover {
   box-shadow: 0 0 4px 4px #388E8E;
 }
@@ -270,8 +272,38 @@ div {
     .contact-buttons{
       width:60%;
     }
+    .chrome-image {
+      height:28%;
+      width:6rem;
+      margin-left:-3.9rem;
+      z-index: 2;
+      position: absolute;
+      display: none;
+    }
+    .git-image {
+      height:28%;
+      width:6rem;
+      margin-left:3.9rem;
+      z-index: 2;
+      position: absolute;
+      display: none;
+    }
 }
-@media only screen and (max-width: 900px) {
-
-
+@media only screen and (max-height: 700px) {
+    #main-title-web {
+      margin-top: -1rem;
+    }
+    #about-me-page-header{
+      height:10%;
+      align-items: center;
+      justify-content: center;
+    }
+    #about-me-header{
+      font-size:2rem;
+    }
+    #about-me-page {
+      height:90%;
+      align-items: center;
+      justify-content: center;
+    }
 }

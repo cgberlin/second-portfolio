@@ -20,7 +20,7 @@ $('#contact').on('click', function(){
 $('#about-me').on('click', function(){
   hideEverything();
   $('#about-me-page').css('display', 'flex');
-  $('#about-me-page-header').show();
+  $('#about-me-page-header').css('display', 'flex');
 });
 $('.project-image-container').hover(function(){
   $(this).children(':first').css('-webkit-filter', 'grayscale(1)');
