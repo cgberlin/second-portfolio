@@ -273,20 +273,10 @@ div {
       width:60%;
     }
     .chrome-image {
-      height:28%;
-      width:6rem;
-      margin-left:-3.9rem;
-      z-index: 2;
-      position: absolute;
-      display: none;
+      margin-left:0;
     }
     .git-image {
-      height:28%;
-      width:6rem;
-      margin-left:3.9rem;
-      z-index: 2;
-      position: absolute;
-      display: none;
+      margin-left:0;
     }
 }
 @media only screen and (max-height: 700px) {
